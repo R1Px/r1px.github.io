@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reverse Shell</title>
+</head>
+<body>
+  <h1>Reverse Shell</h1>
+  <div>
+    <textarea id="output" rows="10" cols="80" readonly></textarea>
+  </div>
+  <div>
+    <input type="text" id="command" placeholder="Komut girin" />
+    <button onclick="executeCommand()">Komutu Gönder</button>
+  </div>
+
+  <script>
+    const outputTextarea = document.getElementById("output");
+    const commandInput = document.getElementById("command");
+
+    const socket = new WebSocket("ws://localhost:3000");
+
+    socket.onmessage = event => {
+      outputTextarea.value += event.data + "\n";
+    };
+
+    function executeCommand() {
+      const command = commandInput.value.trim();
+      socket.send(command);
+      commandInput.value = "";
+    }
+  </script>
+</body>
+</html>

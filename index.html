@@ -4,6 +4,17 @@
   <title>It's Me... R1Px0x8</title>
   <meta content="R1Px0x8?" name="description"> 
 </head>
+      <script>
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+
+        document.addEventListener('click', function(e) {
+            if (e.button === 0) {
+                e.preventDefault();
+            }
+        });
+    </script>
     <script>
         document.addEventListener('contextmenu', function(e) {
             e.preventDefault();

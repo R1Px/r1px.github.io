@@ -2,7 +2,19 @@
 <html lang="en" dir="ltr">
 <head>
   <title>It's Me... R1Px0x8</title>
+  <meta content="R1Px0x8?" name="description"> 
 </head>
+    <script>
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+
+        document.addEventListener('click', function(e) {
+            if (e.button === 0 || e.button === 2) {
+                e.preventDefault();
+            }
+        });
+    </script>
 <style>
     @font-face { font-family:"TopazPlus"; src: url(https://raw.githubusercontent.com/rewtnull/amigafonts/master/ttf/TopazPlus_a500_v1.0.ttf);}
     body { color: #dddddd;

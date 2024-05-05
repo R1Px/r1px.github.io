@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+   <title>Hacked By R1Px0x8 - SGT</title> 
+   <meta content="R1Px0x8?" name="description"> 
+   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> 
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> 
+  </head>
+  <body bgcolor="black">
+      
+ <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: 'Arial', sans-serif;
+        }
+
+        #logo-container {
+            text-align: center;
+            color: white;
+        }
+
+        #logo-container img {
+            max-width: 50%;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        p {
+            font-size: 24px;
+            margin-top: 10px;
+            letter-spacing: 1px;
+        }
+
+        .binary-raindrop {
+            position: absolute;
+            color: #FFFFFF;
+            font-family: 'Courier New', monospace;
+            font-size: 18px;
+            opacity: 0;
+        }
+
+        #overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: none;
+            z-index: 999;
+        }
+
+        #overlay p {
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            margin-top: 30%;
+        }
+    </style>
+
+     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.addEventListener("mousemove", handleMouseClick);
+            document.addEventListener("contextmenu", handleRightClick);
+            createBinaryRain();
+            playMusic();
+        });
+
+        function handleMouseClick() {
+            document.removeEventListener("mousemove", handleMouseClick);
+        }
+
+        function playMusic() {
+            const music = document.getElementById("background-music");
+            music.play();
+        }
+
+        function createBinaryRaindrop() {
+            const binaryDigit = Math.round(Math.random());
+            const raindrop = document.createElement("div");
+            raindrop.classList.add("binary-raindrop");
+            raindrop.innerText = binaryDigit;
+            raindrop.style.left = Math.random() * window.innerWidth + "px";
+            raindrop.style.top = 0;
+            raindrop.style.opacity = 1;
+            document.body.appendChild(raindrop);
+            animateRaindrop(raindrop, binaryDigit);
+        }
+
+        function animateRaindrop(raindrop, binaryDigit) {
+            const animationDuration = Math.random() * 5000 + 2000;
+            let startTime;
+            function animate(now) {
+                if (!startTime) startTime = now;
+                const elapsedTime = now - startTime;
+                const progress = elapsedTime / animationDuration;
+                raindrop.style.top = progress * window.innerHeight + "px";
+                raindrop.style.opacity = 1 - progress;
+                if (progress > 0.5) {
+                    raindrop.innerText = binaryDigit;
+                }
+                if (progress < 1) {
+                    requestAnimationFrame(animate);
+                } else {
+                    raindrop.remove();
+                }
+            }
+            requestAnimationFrame(animate);
+        }
+
+        function createBinaryRain() {
+            createBinaryRaindrop();
+            setInterval(createBinaryRaindrop, 100);
+        }
+
+        function handleRightClick(event) {
+            event.preventDefault();
+            playMusic();
+        }
+    </script>
+    <audio id="backgroundMusic" src="https://mp3files.cc/dl/dHJURjRYaHhXREoraDVwZjBKeFFMQT/nena-venetsanou-lilith-turk-e-eviri.mp3" loop></audio>
+    <script>
+      function createBinary() {
+        const binary = document.createElement("span");
+        binary.className = "binary";
+        binary.style.left = Math.random() * 100 + "vw";
+        binary.innerText = Math.round(Math.random());
+        document.querySelector(".binary-container").appendChild(binary);
+  
+        setTimeout(() => {
+          binary.remove();
+        }, 5000);
+      }
+  
+      setInterval(createBinary, 75);
+  
+      document.addEventListener("click", function() {
+        var audio = document.getElementById("backgroundMusic");
+        audio.play();
+      });
+    </script>
+   <style type='text/css'>
+     body,
+     a:hover {
+       cursor: url(http://cur.cursors-4u.net/symbols/sym-1/sym46.cur), progress !important;
+      }
+   </style>
+<table width="100%" height="100%"> 
+    <tbody> 
+     <tr> 
+      <td align="center"> 
+       <center> 
+         <img src="https://i.hizliresim.com/gm4vsk9.gif" width="550"> 
+        <font size="5" color="white"></font> 
+        <pre><font size="5" color="white">Hacked by SGT TIM</font><br>
+ <font size="6" color="white"></font><pre><font size="6" color="white">R1Px0x8 says : We Are Here Bitch's</font>.<br>
+ <font size="6" color="white"></font><pre><font size="6" color="white">root@sgt:~# id</font>.<br>
+ <font size="6" color="white"></font><pre><font size="6" color="white">uid=0 gid=0 groups=0  404 Not Found...</font>.<br>
+ <font size="5" color="white"></font><pre><font size="5" color="white"> - R1Px0x8 - - Eclipse - - SWINDLER - - Nobody3 - - Letanis - - Piyade - - MelihTaha - - 0xD4RKHU8 - - rosrebecca - - Horael - - Xeja - - ALL ALKA TEAM MEMBERS -</font>
+ </pre></pre></pre></pre> 
+       </center> </td> 
+     </tr> 
+    </tbody> 
+   </table> 
+  </body>
+ </html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+    <title>Welcome my nigga</title> 
+    <meta name="keywords" content="Welcome my nigga"> 
+    <meta name="description" content="Ne bakıyon kurabiye var simit var amk"> 
+    <meta property="og:image" content="https://i.hizliresim.com/gdch447.jpg"> 
+    <link rel="icon" href="https://i.hizliresim.com/gdch447.jpg"> 
+    <meta name="robots" content="index, follow"> 
+    <meta name="googlebot" content="index,follow"> 
+    <meta property="og:type" content="website"> 
+    <meta name="robots" content="all">
+    <meta name="robots schedule" content="auto"> 
+    <meta name="distribution" content="global">
+    <link href="https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+    body {
+            background-color: #000000;
+            font-family: 'Bangers', cursive;
+        }
+
+        .centered-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #ffffff;
+            font-size: 48px;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            font-family: 'Trade Winds', cursive;
+        }
+
+        body {
+            font-family: 'Trade Winds', cursive;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay loop preload="auto" id="bg-video">
+        <source src="https://github.com/v3xusa/v3xusa.github.io/blob/36dd6592504c60e002f5a26c4e4fe42ed02cefdb/I%20ALWAYS%20WANTED%20TO%20BE%20A%20GANGSTER.mp4?raw=true" type="video/mp4">
+        Tarayıcınız video etiketini desteklemiyor.
+    </video>
+
+    <div class="centered-text">
+        Welcome my nigga
+    </div> 
+
+    <script>
+        const video = document.getElementById('bg-video');
+        const errorMessage = document.getElementById('error-message');
+
+        // Video yükleme hatası durumunda
+        video.addEventListener('error', () => {
+            errorMessage.style.display = 'block'; // Hata mesajını göster
+        });
+
+        // Yedek olarak otomatik yeniden yükleme
+        video.addEventListener('stalled', () => {
+            console.warn('Video yüklenemedi, yeniden başlatılıyor...');
+            video.load();
+            video.play().catch(err => {
+                console.error('Video oynatılamıyor:', err);
+            });
+        });
+    </script>
+</body>
+</html>
